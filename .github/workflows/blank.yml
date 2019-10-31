@@ -30,7 +30,7 @@ jobs:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
     - name: Run sonarqube on push
-      if: success() &&  github.secrets.SONAR_TOKEN > 0 
+      if: success() &&  github.secrets.SONAR_TOKEN != ""
       env: 
         PROJECT_KEY: VA
         HOST_URL: https://sonar.openbsl.ru
