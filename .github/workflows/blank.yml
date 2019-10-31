@@ -14,8 +14,7 @@ on:
 
 
 jobs:
-  
-  job: permission
+
   test:
     runs-on: ubuntu-latest  
     steps:
