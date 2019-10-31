@@ -23,7 +23,7 @@ jobs:
       uses: actions/checkout@v1
     - name: "Check if user has write access"
       uses: "lannonbr/repo-permission-check-action@2.0.0"
-      continue-on-error: true
+      continue-on-error: false
       with:
         permision: "write"
       env:
@@ -35,4 +35,5 @@ jobs:
         PROJECT_KEY: VA
         HOST_URL: https://sonar.openbsl.ru
       run: echo ddd ${{ secrets.SONAR_TOKEN }}
+    
     
