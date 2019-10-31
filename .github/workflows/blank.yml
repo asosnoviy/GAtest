@@ -24,7 +24,7 @@ jobs:
     - name: "Check if user has write access"
       uses: "lannonbr/repo-permission-check-action@2.0.0"
       with:
-        permission: "write"
+        permision: "write"
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
